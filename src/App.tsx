@@ -24,7 +24,7 @@ function App() {
           ETH Guangzhou Hackathon
         </h1>
         <h2 className="text-3xl font-medium mb-6 text-center text-gray-300">
-          2024 以太坊广州黑客松
+          2025 以太坊广州黑客松
         </h2>
         <p className="text-xl text-center text-gray-400 mb-12">
           用代码构建未来，在广州遇见以太坊的无限可能
