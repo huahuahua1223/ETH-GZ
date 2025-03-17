@@ -92,7 +92,7 @@ const Timeline: React.FC = () => {
   return (  
     <div className="w-full py-6 sm:py-10 md:py-16">
       {/* 移动端折叠式时间线 */}
-      <div className="sm:hidden px-4 py-2 relative">
+      <div className="sm:hidden px-4 py-12 relative">
         <div className="max-w-[400px] mx-auto">
           {/* 总标题与折叠开关 */}
           <div 
@@ -131,14 +131,16 @@ const Timeline: React.FC = () => {
         </div>
       </div>
       
-      {/* 桌面端水平时间线 */}
-      <div className="hidden sm:block w-full overflow-x-auto py-6 md:py-10">
-        <div className="flex justify-between items-start min-w-[800px] md:min-w-[1000px] lg:min-w-[1200px] px-6 md:px-12 relative mx-auto">
+      {/* 桌面端水平时间线 - 移除滚动条 */}
+      <div className="hidden sm:block w-full py-6 md:py-10 overflow-hidden">
+        <div className="flex justify-between items-start w-full px-6 md:px-12 relative mx-auto">
           {/* 水平白色连接线 */}
-          <div className="absolute w-[85%] h-[3px] bg-white top-[57px] sm:top-[60px] md:top-[66px] left-[7.5%] z-0"></div>
+          <div className="absolute w-[75%] h-[3px] bg-white top-[57px] sm:top-[60px] md:top-[66px] left-[12.5%] z-0"></div>
           
           {timelineItems.map((item, index) => (
-            <TimelineItem key={index} date={item.date} title={item.title} />
+            <div key={index} className="flex-1 flex justify-center">
+              <TimelineItem date={item.date} title={item.title} />
+            </div>
           ))}
         </div>
       </div>
