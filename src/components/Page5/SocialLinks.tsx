@@ -12,7 +12,7 @@ const SocialLink: React.FC<SocialLinkProps> = ({ icon, alt, href }) => {
       href={href} 
       target="_blank" 
       rel="noopener noreferrer"
-      className="w-16 h-16 md:w-20 md:h-20 flex items-center justify-center transition-colors rounded-md p-3 transform hover:scale-105"
+      className="w-10 h-10 sm:w-12 sm:h-12 md:w-16 md:h-16 lg:w-20 lg:h-20 flex items-center justify-center transition-colors rounded-md p-2 sm:p-3 transform hover:scale-105"
     >
       <img src={icon} alt={alt} className="w-full h-full object-contain" />
     </a>
@@ -29,8 +29,8 @@ const SocialLinks: React.FC = () => {
   ];
 
   return (
-    <div className="flex justify-center mt-20">
-      <div className="flex space-x-5 md:space-x-8">
+    <div className="flex justify-center mt-12 sm:mt-16 md:mt-20">
+      <div className="flex flex-wrap justify-center gap-3 sm:gap-4 md:space-x-5 lg:space-x-8">
         {links.map((link, index) => (
           <SocialLink key={index} {...link} />
         ))}
