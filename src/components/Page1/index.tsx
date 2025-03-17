@@ -16,12 +16,12 @@ const Page1: React.FC = () => {
         <img 
           src="/page1/guang.png"
           alt="Guang character"
-          className="absolute w-[290px] h-[350px] left-[100px] bottom-[-35px] z-20"
+          className="absolute w-[70px] h-[85px] sm:w-[200px] sm:h-[240px] md:w-[250px] md:h-[300px] lg:w-[290px] lg:h-[350px] left-[20px] sm:left-[50px] md:left-[80px] lg:left-[100px] bottom-[-15px] z-20"
         />
         <img 
           src="/page1/zhou.png"
           alt="Zhou character"
-          className="absolute w-[290px] h-[350px] right-[100px] bottom-[-10px] z-20"
+          className="absolute w-[70px] h-[85px] sm:w-[200px] sm:h-[240px] md:w-[250px] md:h-[300px] lg:w-[290px] lg:h-[350px] right-[20px] sm:right-[50px] md:right-[80px] lg:right-[100px] bottom-[0px] z-20"
         />
       </div>
 
